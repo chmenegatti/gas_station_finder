@@ -9,6 +9,8 @@ import {
   MapContainer,
   SearchBox,
   SearchContainer,
+  ThurstButton,
+  ThurstButtonText,
 } from "./styles";
 
 const Explorar: React.FC = () => {
@@ -33,6 +35,14 @@ const Explorar: React.FC = () => {
             <Ionicons name="filter" size={24} color="#888" />
           </TouchableOpacity>
         </SearchContainer>
+        <ThurstButton>
+          <MaterialCommunityIcons
+            name="gas-station"
+            size={24}
+            color="#f7f7f7"
+          />
+          <ThurstButtonText>Estou com sede!</ThurstButtonText>
+        </ThurstButton>
       </MapContainer>
     </ExploreContainer>
   );
