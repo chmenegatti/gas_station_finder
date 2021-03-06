@@ -64,7 +64,7 @@ export const ThurstButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: ${bottonPosition - 750}px;
+  bottom: ${bottonPosition - 752}px;
   left: ${leftPosition}px;
   border-radius: 8px;
   flex-direction: row;
