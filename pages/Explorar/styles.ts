@@ -32,6 +32,7 @@ const leftPosition = Math.floor(
   (Dimensions.get("window").width - widthBox) / 2
 );
 const topPosition = Math.floor(Dimensions.get("window").height / 32);
+const bottonPosition = Math.floor(Dimensions.get("window").height);
 const heightBox = Math.floor(Dimensions.get("window").height / 16);
 
 export const SearchContainer = styled.View`
@@ -54,4 +55,22 @@ export const SearchContainer = styled.View`
 export const SearchBox = styled.TextInput`
   width: 82%;
   font-size: 16px;
+`;
+
+export const ThurstButton = styled.TouchableOpacity`
+  width: ${widthBox}px;
+  height: ${heightBox}px;
+  background: #ca5501;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: ${bottonPosition - 750};
+  left: ${leftPosition}px;
+  border-radius: 8px;
+`;
+
+export const ThurstButtonText = styled.Text`
+  font-size: 16px;
+  color: #f7f7f7;
+  font-weight: bold;
 `;
