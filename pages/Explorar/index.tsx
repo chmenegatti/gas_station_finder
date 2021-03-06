@@ -36,6 +36,11 @@ const Explorar: React.FC = () => {
           </TouchableOpacity>
         </SearchContainer>
         <ThurstButton>
+          <MaterialCommunityIcons
+            name="gas-station"
+            size={24}
+            color="#f7f7f7"
+          />
           <ThurstButtonText>Estou com sede!</ThurstButtonText>
         </ThurstButton>
       </MapContainer>

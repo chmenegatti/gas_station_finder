@@ -64,13 +64,15 @@ export const ThurstButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: ${bottonPosition - 750};
+  bottom: ${bottonPosition - 750}px;
   left: ${leftPosition}px;
   border-radius: 8px;
+  flex-direction: row;
 `;
 
 export const ThurstButtonText = styled.Text`
   font-size: 16px;
   color: #f7f7f7;
   font-weight: bold;
+  margin-left: 16px;
 `;
