@@ -27,13 +27,13 @@ export const MapContainer = styled.View`
   position: relative;
 `;
 
-const widthBox = Math.floor(Dimensions.get("window").width - 30);
+const widthBox = Math.floor(Dimensions.get("screen").width - 30);
 const leftPosition = Math.floor(
-  (Dimensions.get("window").width - widthBox) / 2
+  (Dimensions.get("screen").width - widthBox) / 2
 );
-const topPosition = Math.floor(Dimensions.get("window").height / 32);
-const bottonPosition = Math.floor(Dimensions.get("window").height);
-const heightBox = Math.floor(Dimensions.get("window").height / 16);
+const topPosition = Math.floor(Dimensions.get("screen").height / 32);
+const bottonPosition = Math.floor(Dimensions.get("screen").height);
+const heightBox = Math.floor(Dimensions.get("screen").height / 16);
 
 export const SearchContainer = styled.View`
   width: ${widthBox}px;
@@ -64,7 +64,7 @@ export const ThurstButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: ${bottonPosition - 752}px;
+  bottom: ${bottonPosition - 800}px;
   left: ${leftPosition}px;
   border-radius: 8px;
   flex-direction: row;
