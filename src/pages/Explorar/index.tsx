@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity } from "react-native";
 import MapView from "react-native-maps";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import {
@@ -12,8 +12,10 @@ import {
   ThurstButton,
   ThurstButtonText,
 } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 const Explorar: React.FC = () => {
+  const { navigate } = useNavigation();
   return (
     <ExploreContainer>
       <HeaderContainer>
@@ -31,7 +33,7 @@ const Explorar: React.FC = () => {
         <SearchContainer>
           <MaterialCommunityIcons name="magnify" size={28} color="#888" />
           <SearchBox placeholder="Encontre um posto e Salve-se" />
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigate("Filter")}>
             <Ionicons name="filter" size={24} color="#888" />
           </TouchableOpacity>
         </SearchContainer>

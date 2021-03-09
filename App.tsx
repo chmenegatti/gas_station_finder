@@ -1,7 +1,12 @@
-import { StatusBar } from "expo-status-bar";
+import "react-native-gesture-handler";
+import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import Explorar from "./pages/Explorar";
+import Routes from "./src/routes";
 
 export default function App() {
-  return <Explorar />;
+  return (
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  );
 }
